@@ -18,7 +18,9 @@
         </td>
         <td>
           <button (click)="remove(task)"class="remove-button">X</button>
-          <button (click)="markAsDone(task)"class="done-button">Done</button>
+          <button (click)="task.toggleIsDone()"class="done-button">
+            {{task.isDone? "Undo" : "Done"}}
+          </button>
         </td>
       </tr>
     </table>
