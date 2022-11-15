@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TaskListComponent } from './task-list.component';
 import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker
   ],
   imports: [
     CommonModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    FormsModule
   ],
   exports: [
     TaskListComponent
