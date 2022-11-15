@@ -10,9 +10,10 @@
         </div>
 
         <div class="input-group">
-          <input name="taskTitle" type="text" placeholder="Todo" [(ngModel)]="newTaskTitle">
+          <input #newTask="ngModel" required name="taskTitle" type="text" placeholder="Todo" [(ngModel)]="newTaskTitle">
           <button class="add-button">+</button>
         </div>
+        <div *ngIf="newTask.invalid && (newTask.touched || newTask.dirty)" class="validation-error">Task title is required.</div>
       </form>
 
       <table>
