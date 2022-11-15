@@ -10,12 +10,13 @@ export class TaskListComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  date: Date = new Date()
+
   ngOnInit(): void {
-    var date: Date = new Date(this.route.snapshot.params['date']);
-    console.log(date);
+    this.date = new Date(this.route.snapshot.params['date']);
   }
 
-  
+
   tasks: Task[] = [
     new Task("Visit Ann"),
     new Task("Call Dad"),
@@ -47,6 +48,5 @@ class Task {
     this.isDone = !this.isDone;
   }
 
-  public isDone = false; 
+  public isDone = false;
 }
-
