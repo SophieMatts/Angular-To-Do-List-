@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Route } from '@angular/router';
 
 @Component({
@@ -27,9 +28,13 @@ export class TaskListComponent implements OnInit {
     new Task("Shop for the party")
   ]
 
-  add(){
+  add(taskNgForm: NgForm){
+
+    if(taskNgForm.touched == false){
+      return;
+    }
     this.tasks.push(new Task(this.newTaskTitle))
-    this.newTaskTitle = "";
+    taskNgForm.reset({date: this.date});
   }
 
   remove(existingTask: Task){
