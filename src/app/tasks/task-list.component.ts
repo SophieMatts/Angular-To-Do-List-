@@ -41,6 +41,7 @@ export class TaskListComponent implements OnInit {
 
     if(userConfirmed){
       this.taskService.removeTask(existingTask);
+
     }
   }
 
