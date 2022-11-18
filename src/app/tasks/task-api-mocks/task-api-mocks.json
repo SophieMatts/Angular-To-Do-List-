@@ -11,7 +11,7 @@
       "uuid": "ac54175d-4123-4994-9023-f36136983da8",
       "documentation": "",
       "method": "get",
-      "endpoint": "tasks",
+      "endpoint": "tasks/:date",
       "responses": [
         {
           "uuid": "73d3db67-468c-47b3-bcb3-406460d25f5d",
@@ -38,7 +38,7 @@
       "uuid": "37db1459-6cf2-4793-b325-9ab162b34fb9",
       "documentation": "",
       "method": "post",
-      "endpoint": "tasks",
+      "endpoint": "tasks/:date",
       "responses": [
         {
           "uuid": "282b9ae4-0f06-4fb4-933c-b19c4f5e0a29",
@@ -65,7 +65,7 @@
       "uuid": "53099caf-396d-44d3-a1ba-2474d0ea33fc",
       "documentation": "",
       "method": "delete",
-      "endpoint": "tasks/:title",
+      "endpoint": "tasks/:date/:title",
       "responses": [
         {
           "uuid": "b050a821-2a4c-4da3-8973-2520d289a66e",
