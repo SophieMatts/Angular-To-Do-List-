@@ -33,6 +33,33 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "37db1459-6cf2-4793-b325-9ab162b34fb9",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "tasks",
+      "responses": [
+        {
+          "uuid": "282b9ae4-0f06-4fb4-933c-b19c4f5e0a29",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
