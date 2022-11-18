@@ -60,6 +60,33 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "53099caf-396d-44d3-a1ba-2474d0ea33fc",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "tasks/:title",
+      "responses": [
+        {
+          "uuid": "b050a821-2a4c-4da3-8973-2520d289a66e",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
