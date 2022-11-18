@@ -1,0 +1,82 @@
+{
+  "uuid": "a7a2b045-5787-482a-870a-8e09850db64d",
+  "lastMigration": 24,
+  "name": "Task api mocks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "ac54175d-4123-4994-9023-f36136983da8",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tasks",
+      "responses": [
+        {
+          "uuid": "73d3db67-468c-47b3-bcb3-406460d25f5d",
+          "body": "[\n  {\"title\": \"Visit Ann\"},\n  {\"title\": \"Call Dad\"},\n  {\"title\": \"Go to the gym\"},\n  {\"title\": \"Wash the dishes\"},\n  {\"title\": \"Shop for the party\"}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
