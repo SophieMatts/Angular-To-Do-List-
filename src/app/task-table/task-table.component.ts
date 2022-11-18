@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TaskItem } from '../tasks/task-item.dto';
 import { Observable } from 'rxjs';
 
@@ -15,11 +15,14 @@ export class TaskTableComponent implements OnInit {
   @Input()
   tasks: TaskItem[] = []
 
+  @Output()
+  onRemove = new EventEmitter<TaskItem>()
+
   ngOnInit(): void {
   }
 
   remove(taskItem: TaskItem){
-
+    this.onRemove.next(taskItem);
   }
 
 }
