@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 
 @Component({
-  selector: 'task-table',
+  selector: 'task-table, todo-table, .task-table-class, [task-table-attr]:not([omit-me=true])',
   templateUrl: './task-table.component.html',
   styleUrls: ['./task-table.component.css']
 })

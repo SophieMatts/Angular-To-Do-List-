@@ -23,6 +23,6 @@
       </div>
     </form>
 
-    <task-table [tasks]="(tasks | async) ?? []" (onRemove)="remove($event)"></task-table>
+    <div omit-me="false" task-table-attr [tasks]="(tasks | async) ?? []" (onRemove)="remove($event)"></div>
   </div>
 </div>
