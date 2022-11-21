@@ -1,7 +1,7 @@
 <div>
 
   <mat-calendar [(selected)]="selectedDate"></mat-calendar>
-  {{selectedDate.toLocaleDateString()}}
+  {{selectedDate | date : 'fullDate'}}
 
   <a [routerLink]="['/tasks', {date:selectedDate}]">Tasks</a>
 </div>
